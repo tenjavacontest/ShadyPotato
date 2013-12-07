@@ -3,3 +3,10 @@ version: 0.1
 main: net.amigocraft.tendotjava.TenDotJava
 author: Maxim Roncace
 description: Entities or something :P
+permissions:
+  entiguard.recruit:
+    description: Allows recruitment of mobs
+    default: true
+  entiguard.unlimited:
+    description: Allows armies larger than configured maximum size
+    default: op
