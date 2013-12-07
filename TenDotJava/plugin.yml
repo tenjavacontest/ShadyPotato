@@ -1,8 +1,8 @@
-name: TenDotJava
+name: EntiGuard
 version: 0.1
-main: net.amigocraft.tendotjava.TenDotJava
+main: net.amigocraft.entiguard.EntiGuard
 author: Maxim Roncace
-description: Entities or something :P
+description: Mob armies!
 permissions:
   entiguard.recruit:
     description: Allows recruitment of mobs
