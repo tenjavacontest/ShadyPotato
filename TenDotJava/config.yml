@@ -8,8 +8,8 @@ max-size: 8
 # Chance of loyalty for items (1/x)
 loyalty-chance:
   DIAMOND: 2
-  GOLD_INGOT: 8
-  IRON_INGOT: 16
+  GOLD_INGOT: 4
+  IRON_INGOT: 8
   
 # Entities which may be added to an army
 allowed-entities:

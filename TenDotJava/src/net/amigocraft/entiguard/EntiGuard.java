@@ -7,13 +7,14 @@ import java.util.logging.Logger;
 import net.amigocraft.entiguard.listeners.EntityListener;
 import net.amigocraft.entiguard.managers.ArmyManager;
 
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class EntiGuard extends JavaPlugin {
 
 	public static EntiGuard plugin;
 	public static Logger log;
-	
+
 	public void onEnable(){
 		log = getLogger();
 		saveDefaultConfig();
@@ -27,9 +28,12 @@ public class EntiGuard extends JavaPlugin {
 			}
 		}, 0L, 10L);
 	}
-	
+
 	public void onDisable(){
+		for (Player p : getServer().getOnlinePlayers()){
+			ArmyManager.saveEntities(p.getName());
+		}
 		plugin = null;
 	}
-	
+
 }

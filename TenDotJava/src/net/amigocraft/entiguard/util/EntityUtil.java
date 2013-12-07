@@ -10,7 +10,7 @@ import net.minecraft.server.v1_6_R3.PathEntity;
 
 public class EntityUtil {
 
-	public void moveTo(LivingEntity ent, Location moveTo, float speed){
+	public static void moveTo(LivingEntity ent, Location moveTo, float speed){
 		Navigation n = ((EntityInsentient)((CraftLivingEntity)ent).getHandle()).getNavigation();
 		PathEntity path = n.a(moveTo.getX(), moveTo.getY(), moveTo.getZ());
 		n.a(path, speed);
