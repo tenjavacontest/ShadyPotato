@@ -1,12 +1,12 @@
 package net.amigocraft.entiguard.util;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_6_R3.entity.CraftLivingEntity;
+import org.bukkit.craftbukkit.v1_7_R1.entity.CraftLivingEntity;
 import org.bukkit.entity.LivingEntity;
 
-import net.minecraft.server.v1_6_R3.EntityInsentient;
-import net.minecraft.server.v1_6_R3.Navigation;
-import net.minecraft.server.v1_6_R3.PathEntity;
+import net.minecraft.server.v1_7_R1.EntityInsentient;
+import net.minecraft.server.v1_7_R1.Navigation;
+import net.minecraft.server.v1_7_R1.PathEntity;
 
 public class EntityUtil {
 

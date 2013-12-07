@@ -18,7 +18,7 @@ public class EntiGuard extends JavaPlugin {
 	public void onEnable(){
 		log = getLogger();
 		saveDefaultConfig();
-		try {new File(getDataFolder(), "entites.yml").createNewFile();}
+		try {new File(getDataFolder(), "entities.yml").createNewFile();}
 		catch (IOException ex){ex.printStackTrace();}
 		getServer().getPluginManager().registerEvents(new EntityListener(), this);
 		plugin = this;
